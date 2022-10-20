@@ -1,4 +1,4 @@
-
+// om man trykker enter i input-feltet, kjører generer()
 var input = document.getElementById('navn');
 input.addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
@@ -7,35 +7,37 @@ input.addEventListener("keypress", function(event) {
     }
 });
 
+// funksjon som genererer et sitat (kjøres når knapp trykkes)
 function generer() {
     document.getElementById('sitat').innerText='';
 
     let navn = document.getElementById('navn').value;
+    // sjekker om inputfeltet er tomt eller inneholder tall
     if (navn == '' || /\d/.test(navn)) {
         document.getElementById('navn').value = '';
         document.getElementById('navn').placeholder = 'du må skrive inn et navn';
         return;
     }
+    // velger tilfeldige elementer fra listene
     let handling = handlinger[Math.floor(Math.random()*handlinger.length)];
     let offer = offere[Math.floor(Math.random()*offere.length)];
     let tid = tider[Math.floor(Math.random()*tider.length)];
+    // leter etter :tag: og bytter det ut med tilfeldig fra liste
     tid = tid.replace(/:offer:/g, offere[Math.floor(Math.random()*offere.length)]);
     tid = tid.replace(/:handling:/g, handlinger[Math.floor(Math.random()*handlinger.length)]);
 
+    // setter sammen setning
     let vits = navn + ' ' + handling + ' ' + offer + ' ' + tid;
 
+    // lager elementet som holder sitatet
     let sitat = document.createElement('p');
     sitat.innerText = '"' + vits + '"';
     sitat.style = 'color: #FEFFFF; ';
     document.getElementById('sitat').appendChild(sitat);
+    // lager "-Brian"
     let brian = document.createElement('p');
     brian.innerText = '-Brian';
     brian.style = 'text-align: right; margin-right: 1em;';
     document.getElementById('sitat').appendChild(brian);
 
-}
-
-function lagBilde() {
-    let bilde = document.createElement('canvas');
-    bilde.style.display = 'hidden';
 }

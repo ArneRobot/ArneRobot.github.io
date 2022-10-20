@@ -1,4 +1,9 @@
 
+////////////////////////////////////////
+// :offer: = tilfeldig offer          //
+// :handling: = tilfeldig handling    //
+////////////////////////////////////////
+
 let handlinger = [
     'skriker på',
     'slikker på',
@@ -138,7 +143,7 @@ let offere = [
     'sauer',
     'kuer',
     'innvandrere',
-    'barnehage tanter',
+    'barnehagetanter',
     'rektor',
     'chrest',
     'jøder',
