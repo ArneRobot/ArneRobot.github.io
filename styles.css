@@ -66,10 +66,19 @@ footer {
     position:fixed;
     bottom:0;
     margin-bottom: 3em;
+    display: flex;
 }
 
 footer img {
     filter: invert();
     height: 2em;
     margin-inline: 1em;
+}
+
+footer img:hover {
+    transform: scale(1.2);
+}
+
+footer img:active {
+    transform: scale(0.8);
 }

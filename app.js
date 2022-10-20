@@ -33,11 +33,11 @@ function generer() {
     let sitat = document.createElement('p');
     sitat.innerText = '"' + vits + '"';
     sitat.style = 'color: #FEFFFF; ';
+    sitat.id = 'sitatTekst';
     document.getElementById('sitat').appendChild(sitat);
     // lager "-Brian"
     let brian = document.createElement('p');
     brian.innerText = '-Brian';
     brian.style = 'text-align: right; margin-right: 1em;';
     document.getElementById('sitat').appendChild(brian);
-
 }
