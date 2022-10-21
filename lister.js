@@ -262,7 +262,7 @@ let tider = [
     'mens han tenker på :offer:',
     'mens han stryker på låret til :offer:',
     'mens han banker på døren til :offer: for å informere dem om at han er dømt sexforbryter',
-    'mens han vitner imot :offer: i en rettsak hvor de :handling:',
+    'mens han vitner imot :offer: i retten',
     'foran en dommer i rettsaken sin for å bryte § 310, Fremvisning av seksuelle overgrep mot barn eller fremvisning som seksualiserer barn',
     'i 1 - World Trade Center',
     'mens han planlegger et terrorangrep imot den norske staten',
