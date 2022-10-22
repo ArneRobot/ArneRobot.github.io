@@ -1,3 +1,4 @@
+
 // om man trykker enter i input-feltet, kjører generer()
 var input = document.getElementById('navn');
 input.addEventListener("keypress", function(event) {
@@ -18,6 +19,7 @@ function generer() {
         document.getElementById('navn').placeholder = 'du må skrive inn et navn';
         return;
     }
+    navn = capitalize(navn);
     // velger tilfeldige elementer fra listene
     let handling = handlinger[Math.floor(Math.random()*handlinger.length)];
     let offer = offere[Math.floor(Math.random()*offere.length)];
@@ -40,4 +42,15 @@ function generer() {
     brian.innerText = '-Brian';
     brian.style = 'text-align: right; margin-right: 1em;';
     document.getElementById('sitat').appendChild(brian);
+}
+
+// tar inn en setning (navn) og gjør forbokstaven av hvert ord stort
+function capitalize(navn) {
+    navn = navn.toLowerCase();
+    navn = navn.split(' ');
+    for (let i = 0; i < navn.length; i++) {
+        navn[i] = navn[i][0].toUpperCase() + navn[i].substr(1);
+    }
+    navn = navn.join(' ');
+    return navn;
 }
