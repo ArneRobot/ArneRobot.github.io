@@ -25,6 +25,16 @@ function generer() {
     // leter etter :tag: og bytter det ut med tilfeldig fra liste
     tid = tid.replace(/:offer:/g, offere[Math.floor(Math.random()*offere.length)]);
     tid = tid.replace(/:handling:/g, handlinger[Math.floor(Math.random()*handlinger.length)]);
+    // velger kjønnet på personen og erstatter :kjoenn: med riktig pronomen
+    let inpKjoenn = document.getElementById('kjoenn').value
+    if (inpKjoenn == 'male') {
+        kjoenn = 'han'
+    }
+    else if (inpKjoenn == 'female') {
+        kjoenn = 'hun'
+    }
+    tid = tid.replace(/:kjoenn:/g, kjoenn)
+    handling = handling.replace(/:kjoenn:/g, kjoenn)
 
     // setter sammen setning
     let vits = navn + ' ' + handling + ' ' + offer + ' ' + tid;

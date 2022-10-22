@@ -7,11 +7,16 @@
     <link rel="stylesheet" href="styles.css">
     <title>brianvitser.info</title>
 </head>
-<!-- Kan du se dette? -->
+
 <body>
     <h1>brianvitser.info</h1>
-    <p>Generer Brian-vitser av ypperste kvalitet!<span style="color: #DEF2F1;"> skriv inn navn og trykk på knappen</span></p>
+    <p>Generer Brian-vitser av ypperste kvalitet!<span style="color: #DEF2F1;"> skriv inn navnet på personen og trykk på generer</span></p>
     <main>
+        <label for="kjoenn" id="lblKjoenn">Velg personens kjønn</label>
+        <select name="kjoenn" id="kjoenn">
+            <option value="male">Mann</option>
+            <option value="female">Kvinne</option>
+        </select>
         <input type="text" placeholder="skriv navn her" id="navn">
         <button onclick="generer()" id="knapp">GENERER</button>
         <div id="sitat"></div>
