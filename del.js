@@ -17,6 +17,14 @@ twitter.addEventListener('click', () => {
     window.open(url = twitterApi + ' ' + melding, target='_blank')
 })
 
+/* 
+Når du deler så putter den inn sitatet i tweeten under linken til nettsiden:
+
+twitter.addEventListener('click', () => {
+    window.open(url = twitterApi  + "%0a" + sitatTekst.innerHTML + "-Brian", target='_blank')
+})
+*/
+
 delKnapp.addEventListener('click', () => {
     navigator.share({
         text: melding,

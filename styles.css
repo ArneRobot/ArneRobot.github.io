@@ -46,6 +46,14 @@ main > input {
     border-radius: 0.5em;
 }
 
+main > #kjoenn {
+    margin-top: 1%;
+}
+
+main > #lblKjoenn {
+    margin-bottom: 1%;
+}
+
 main > button {
     height: 3em;
     width: 7em;
