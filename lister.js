@@ -116,7 +116,10 @@ let handlinger = [
     'begår bedrageri imot',
     'begår skattesvindel med',
     'raner',
-    'blir arrestert av politiet med'
+    'blir arrestert av politiet med',
+    'tenner på',
+    'tenner på huset til',
+    'tenner på håret til',
 ]
 
 let offere = [
@@ -275,5 +278,14 @@ let tider = [
     'mens han gjør handlinger som strider imot § 266 a, alvorlig personforfølgelser imot :offer:',
     'mens han blir arrestert av politiet',
     '',
-    'mens han blir dømt til 10 års fengsel for å bryte § 258, Grov menneskehandel'
+    'mens han blir dømt til 10 års fengsel for å bryte § 258, Grov menneskehandel',
+    'mens han tenner på jehovas vitner-bygg',
+    'mens han blir varetektfengslet',
+    'mens han spionerer på statlige virksomheter for Russland',
+    'mens han sprer falsk informasjon på internettet',
+    'mens han sprer russisk propaganda om krigen i Ukraina',
+    'mens han er på symøte',
+    'mens han er på feministmøter',
+    
+
 ]
