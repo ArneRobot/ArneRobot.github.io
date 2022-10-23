@@ -30,7 +30,9 @@ function generer() {
 
     // velger kjønnet på personen og erstatter :kjoenn: med riktig pronomen
     try {
-        fetch('https://api.genderize.io?name='+navn)
+        // å finne riktig pronomen tar en del tid, så om man ikke trenger det, kjører funksjonen uten å
+        if ((tid+handling).includes(':kjoenn:')) {
+            fetch('https://api.genderize.io?name='+navn)
         .then(response => response.json())
         .then(data => {
             let pronomen;
@@ -44,23 +46,31 @@ function generer() {
             tid = tid.replace(/:kjoenn:/g, pronomen);
             handling = handling.replace(/:kjoenn:/g, pronomen);
             
-            // setter sammen setning
-            let vits = navn + ' ' + handling + ' ' + offer + ' ' + tid;
-                    
-            // lager elementet som holder sitatet
-            let sitat = document.createElement('p');
-            sitat.innerText = '"' + vits + '"';
-            sitat.style = 'color: #FEFFFF; ';
-            sitat.id = 'sitatTekst';
-            document.getElementById('sitat').appendChild(sitat);
-            
-            // lager "-Brian"
-            let brian = document.createElement('p');
-            brian.innerText = '-Brian';
-            brian.style = 'text-align: right; margin-right: 1em;';
-            document.getElementById('sitat').appendChild(brian);
+            printSitat(navn, handling, offer, tid);
         })
+        } else {
+            printSitat(navn, handling, offer, tid);
+        }
+        
     } catch (error) {console.log(error)}
+}
+
+function printSitat(navn, handling, offer, tid) {
+    // setter sammen setning
+    let vits = navn + ' ' + handling + ' ' + offer + ' ' + tid;
+                    
+    // lager elementet som holder sitatet
+    let sitat = document.createElement('p');
+    sitat.innerText = '"' + vits + '"';
+    sitat.style = 'color: #FEFFFF; ';
+    sitat.id = 'sitatTekst';
+    document.getElementById('sitat').appendChild(sitat);
+    
+    // lager "-Brian"
+    let brian = document.createElement('p');
+    brian.innerText = '-Brian';
+    brian.style = 'text-align: right; margin-right: 1em;';
+    document.getElementById('sitat').appendChild(brian);
 }
 
 // tar inn en setning (navn) og gjør forbokstaven av hvert ord stort
