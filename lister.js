@@ -121,6 +121,7 @@ let handlinger = [
     'tenner på',
     'tenner på huset til',
     'tenner på håret til',
+    'kjører i 200km/t med',
 ]
 
 let offere = [
