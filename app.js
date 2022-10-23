@@ -58,6 +58,9 @@ function generer() {
 function printSitat(navn, handling, offer, tid) {
     // setter sammen setning
     let vits = navn + ' ' + handling + ' ' + offer + ' ' + tid;
+
+    // endrer melding-variabelet fra del.js til vitsen slik at sitatet blir med om man deler siden
+    melding = vits + '%0a -Brian';
                     
     // lager elementet som holder sitatet
     let sitat = document.createElement('p');

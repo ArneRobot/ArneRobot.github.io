@@ -9,12 +9,14 @@ let melding = 'generer brian-vitser her!';
 const facebookApi = 'https://www.facebook.com/sharer/sharer.php?u=' + pageUrl;
 const twitterApi = 'https://twitter.com/intent/tweet?text=' + pageUrl;
 
+// om brukeren har generert en vits blir denne vitsen meldingen (se app.js linje 63)
+
 facebook.addEventListener('click', () => {
-    window.open(url = facebookApi + ' ' + melding, target='_blank')
+    window.open(url = facebookApi + '%0a' + melding, target='_blank')
 })
 
 twitter.addEventListener('click', () => {
-    window.open(url = twitterApi + ' ' + melding, target='_blank')
+    window.open(url = twitterApi + '%0a' + melding, target='_blank')
 })
 
 /* 
