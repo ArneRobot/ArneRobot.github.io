@@ -121,6 +121,7 @@ let handlinger = [
     'tenner på',
     'tenner på huset til',
     'tenner på håret til',
+    'presser :offer: til å utføre mexuelle handlinger med'
 ]
 
 let offere = [
@@ -132,9 +133,8 @@ let offere = [
     'nyfødte barn',
     'barnehagebarn',
     'politisjefen',
-    'seg selv',
     'gamle menn',
-    'ungdomskole elever',
+    'ungdomskoleelever',
     'Borgar',
     'Brede',
     'Adrian',
@@ -184,8 +184,8 @@ let offere = [
     'kristne',
     'jehovas vitner',
     'terrorister',
-    'al-qaeda medlemmer',
-    'isis medlemmer',
+    'al-qaeda-medlemmer',
+    'isis-medlemmer',
     'barn med nedsatt funksjonsevne',
     'gamle damer med nedsatt funksjonsevne',
     'tilbakestående folk',

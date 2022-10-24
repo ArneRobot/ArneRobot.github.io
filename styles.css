@@ -73,7 +73,7 @@ footer {
     margin-top: 1em;
     display: flex;
     background-color: #3AAFA9;
-    box-shadow: 0 -10px 10px #3AAFA9;
+    box-shadow: 0 -20px 20px #3AAFA9;
 }
 
 footer img {
