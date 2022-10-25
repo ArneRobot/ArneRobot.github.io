@@ -124,6 +124,8 @@ let handlinger = [
     'presser :offer: til å utføre sexuelle handlinger med',
     'kjører i 200km/t med',
     'leaker nakenbilder av damevolleyballlaget til Wisconsin sammen med',
+    'leaker nakenbilder av',
+
 ]
 
 let offere = [
@@ -199,7 +201,8 @@ let offere = [
     '6 år gamle barn',
     'medlemmer av regjeringen',
     'mindreårige',
-    'veldedighetsorganisasjoner'
+    'veldedighetsorganisasjoner',
+    'damevolleyballlaget til Wisconsin',
 ]
 
 let tider = [
