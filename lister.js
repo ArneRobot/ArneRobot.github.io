@@ -121,7 +121,7 @@ let handlinger = [
     'tenner på',
     'tenner på huset til',
     'tenner på håret til',
-    'presser :offer: til å utføre mexuelle handlinger med',
+    'presser :offer: til å utføre sexuelle handlinger med',
     'kjører i 200km/t med',
 ]
 
