@@ -123,6 +123,7 @@ let handlinger = [
     'tenner på håret til',
     'presser :offer: til å utføre sexuelle handlinger med',
     'kjører i 200km/t med',
+    'leaker nakenbilder av damevolleyballlaget til Wisconsin sammen med',
 ]
 
 let offere = [
