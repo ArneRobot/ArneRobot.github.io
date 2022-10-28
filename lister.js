@@ -124,6 +124,9 @@ const handlinger = [
     'tenner på håret til',
     'presser :offer: til å utføre sexuelle handlinger med',
     'kjører i 200km/t med',
+    'leaker nakenbilder av damevolleyballlaget til Wisconsin sammen med',
+    'leaker nakenbilder av',
+
 ]
 
 const offere = [
@@ -199,7 +202,8 @@ const offere = [
     '6 år gamle barn',
     'medlemmer av regjeringen',
     'mindreårige',
-    'veldedighetsorganisasjoner'
+    'veldedighetsorganisasjoner',
+    'damevolleyballlaget til Wisconsin',
 ]
 
 const tider = [
