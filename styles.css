@@ -74,6 +74,7 @@ footer {
     display: flex;
     background-color: #3AAFA9;
     box-shadow: 0 -20px 20px #3AAFA9;
+    width: auto;
 }
 
 footer img {
@@ -89,4 +90,21 @@ footer img:hover {
 
 footer img:active {
     transform: scale(0.8);
+}
+
+.velgKjoenn {
+    display: flex;
+}
+
+.velgKjoenn > div {
+    user-select: none;
+    width:4em; height:4em;
+    margin:1vw 0;
+    background-color: #FEFFFF;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 10em;
+    text-align: center;
+    
 }

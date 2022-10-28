@@ -30,27 +30,37 @@ function generer() {
 
     // velger kjønnet på personen og erstatter :kjoenn: med riktig pronomen
     try {
-        // å finne riktig pronomen tar en del tid, så om man ikke trenger det, kjører funksjonen uten å
-        if ((tid+handling).includes(':kjoenn:')) {
+        if ((tid+handling).includes(':kjoenn:')) {// å finne riktig pronomen tar en del tid, så om man ikke trenger det, kjører funksjonen uten å
+            let pronomen;
+            for (let i = 0; i < navnArray.length; i++) {
+                if (navnArray[i][0] == navn) {
+                    pronomen = navnArray[i][1];
+                    tid = tid.replace(/:kjoenn:/g, pronomen);
+                    handling = handling.replace(/:kjoenn:/g, pronomen);
+                    printSitat(navn, handling, offer, tid);
+                    return
+                }
+            }
+
             knappId.disabled = true;
             fetch('https://api.genderize.io?name='+navn)
-        .then(response => response.json())
-        .then(data => {
-            let pronomen;
-            if (data['gender'] == 'female') {
-                pronomen = 'hun';
-            } else if (data['gender'] == 'male') {
-                pronomen = 'han';
-            } else {
-                pronomen = 'de';
-            }
-            tid = tid.replace(/:kjoenn:/g, pronomen);
-            handling = handling.replace(/:kjoenn:/g, pronomen);
-            
-            printSitat(navn, handling, offer, tid);
-            
+            .then(response => response.json())
+            .then(data => {
+                if (data.gender == 'female') {
+                    pronomen = 'hun';
+                } else if (data.gender == 'male') {
+                    pronomen = 'han';
+                } else {
+                    pronomen = 'de';
+                    document.querySelector('.switch').style = 'display: initial;';
+                }
+                tid = tid.replace(/:kjoenn:/g, pronomen);
+                handling = handling.replace(/:kjoenn:/g, pronomen);
+                
+                printSitat(navn, handling, offer, tid);
+                
+            })
             knappId.disabled = false;
-        })
 
         } else {
             printSitat(navn, handling, offer, tid);
