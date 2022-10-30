@@ -9,16 +9,14 @@
     <title>brianvitser.info</title>
 </head>
 
-<body onload="start()">
-    <div class="modeDiv">
-        <p id="modeTekst">LIGHT</p>
-        <label class="switch">
-            <input type="checkbox" onchange="darkMode()">
-            <span class="slider round"><img src="images/lightMode.png" id="modeBilde"></span>
-        </label>
-    </div>
+<body>
+
     <h1>brianvitser.info</h1>
-    <p>Generer Brian-vitser av ypperste kvalitet!<span style="color: var(--tekst2);"> skriv inn navnet på personen og trykk på generer</span></p>
+    <label class="switch">
+        <input type="checkbox" onchange="darkMode()">
+        <span class="slider round"><img src="images/lightMode.png" id="modeBilde"></span>
+    </label>
+    <p id="infoTekst">Generer Brian-vitser av ypperste kvalitet!<span style="color: var(--tekst2);"> skriv inn navnet på personen og trykk på generer</span></p>
     <main>
 
         <input type="text" placeholder="skriv navn her" id="navn" maxlength="30">
