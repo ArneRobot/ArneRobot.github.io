@@ -29,7 +29,7 @@ const handlinger = [
     'tar dop med',
     'har sex med',
     'sniffer',
-    'flirter med',
+    'flørter med',
     'kaster egg på',
     'hoster på',
     'kaster maling på',

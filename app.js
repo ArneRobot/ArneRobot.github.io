@@ -105,3 +105,13 @@ function capitalize(navn) {
     navn = navn.join(' ');
     return navn;
 }
+
+let modeArray = ['images/darkMode.png', 'DARK', 'LIGH', 'images/lightMode.png']
+
+function darkMode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+    document.getElementById('modeBilde').src = modeArray[0];
+    document.getElementById('modeTekst').innerText = modeArray[1];
+    modeArray.reverse();
+}
