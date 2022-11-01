@@ -11,6 +11,57 @@
     --tekst1: #EAD2AB;
     --tekst2: #fff1da;
 }
+@keyframes Blink{
+    0%{
+        background: var(--bakgrunn);
+       
+    }
+    10%{
+        background: turquoise;
+    }
+    20%{
+        background: blue
+    }
+    30%{
+        background: green;
+    }
+    40%{
+        background: yellow;
+    }
+    50%{
+        background: orange;
+    }
+    60%{
+        background: orangered;
+    }
+    70%{
+        background: red;
+    }
+    80%{
+        background: lightcoral;
+    }
+    90%{
+        background: lightblue;
+    }
+    100%{
+        background: var(--bakgrunn);
+       
+    }
+}
+.bodyDiscoMode {
+    color: var(--hvit);
+    background-attachment: fixed;
+    animation: Blink 0.3s linear infinite;;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 3em;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
 
 * {
     margin: 0;
@@ -184,4 +235,75 @@ input:checked + .slider img {
 /* Rounded sliders */
 .slider.round {
     border-radius: 34px;
+}
+
+@keyframes slidein {
+    0% {
+        top: -70%;
+        display: block;
+    }
+    20% {
+       top: 0%;
+       display: block;
+    }
+    80% {
+        top: 0%;
+        display: block;
+    }
+    100% {
+        top: -70%;
+        display: block;
+    }
+    
+  }
+
+  
+.confettiOn {
+    display: block;
+    position: absolute;
+    width: 70%;
+    top: -3%;
+}
+.confettiOff {
+    display: none;
+    position: absolute;
+    width: 70%;
+}
+.discoballLOff {
+    display: none;
+    position: absolute;
+}
+.discoballROff {
+    display: none;
+    position: absolute;
+}
+.discoballLOn {
+    position: absolute;
+    right: 70%;
+    height: 55%;
+    animation: 8s slidein;
+}
+.discoballROn {
+    position: absolute;
+    left: 70%;
+    height: 55%;
+    animation: 8s slidein;
+}
+.lightRaveOn {
+    display: block;
+    opacity: 33%;
+    width: 150%;
+    height: 150%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+.lightRaveOff {
+    display: none;
+    opacity: 33%;
+    width: 150%;
+    height: 150%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
 }

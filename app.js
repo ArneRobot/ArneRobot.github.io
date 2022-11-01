@@ -107,10 +107,44 @@ function capitalize(navn) {
 }
 
 let modeArray = ['images/darkMode.png', 'images/lightMode.png']
+var count = 0
 
 function darkMode() {
     var element = document.body;
     element.classList.toggle("dark-mode");
     document.getElementById('modeBilde').src = modeArray[0];
     modeArray.reverse();
+    //Disco-mode aktiveres hvis brukeren trykker på Dark-Mode knapped 20 ganger innen 4s
+    if (count == 0) {
+        timer = setTimeout(countAlert, 4000);
+    }
+    count ++ ;
+    if (count == 20) {
+        console.log("Disco mode startet.")
+        count = 0
+        var mode = document.body.className
+        document.getElementById("confetti").className="confettiOn"
+        document.getElementById("discoballL").className="discoballLOn"
+        document.getElementById("discoballR").className="discoballROn"
+        document.getElementById("lightRave").className="lightRaveOn"
+        document.body.className="bodyDiscoMode"
+        timerOff = setTimeout(countAlert2, 8000)
+        clearTimeout(timer)
+    }
+    function countAlert() {
+        console.log("Disco mode startet ikke, over 5 sekunder")
+        count = 0
+    }
+    function countAlert2() {
+        document.getElementById("confetti").className="confettiOff"
+        document.getElementById("discoballL").className="discoballLOff"
+        document.getElementById("discoballR").className="discoballROff"
+        document.getElementById("lightRave").className="lightRaveOff"
+        if (mode == "dark-mode") {
+            document.body.className="dark-mode"
+        }
+        else {
+            document.body.className=""
+        }
+    }
 }
