@@ -132,7 +132,7 @@ function darkMode() {
         clearTimeout(timer)
     }
     function countAlert() {
-        console.log("Disco mode startet ikke, over 5 sekunder")
+        console.log("Disco mode startet ikke, over 3 sekunder")
         count = 0
     }
     function countAlert2() {
