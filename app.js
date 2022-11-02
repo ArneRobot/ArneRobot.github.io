@@ -114,7 +114,7 @@ function darkMode() {
     element.classList.toggle("dark-mode");
     document.getElementById('modeBilde').src = modeArray[0];
     modeArray.reverse();
-    //Disco-mode aktiveres hvis brukeren trykker på Dark-Mode knapped 20 ganger innen 4s
+    //Disco-mode aktiveres hvis brukeren trykker på Dark-Mode knapped 12 ganger innen 3.3s
     if (count == 0) {
         timer = setTimeout(countAlert, 3300);
     }
