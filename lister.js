@@ -557,7 +557,7 @@ const navnArray = [
   ["Serhii", "hun"],
   ["Alisina", "hun"],
   ["Evenezer", "han"],
-  ["Borgar", "hun"],
+  ["Borgar", "han"],
   ["Khushveer", "han"],
   ["Johanne", "hun"],
   ["Elodie", "hun"],
