@@ -116,10 +116,10 @@ function darkMode() {
     modeArray.reverse();
     //Disco-mode aktiveres hvis brukeren trykker på Dark-Mode knapped 20 ganger innen 4s
     if (count == 0) {
-        timer = setTimeout(countAlert, 4000);
+        timer = setTimeout(countAlert, 3300);
     }
     count ++ ;
-    if (count == 20) {
+    if (count == 12) {
         console.log("Disco mode startet.")
         count = 0
         var mode = document.body.className
