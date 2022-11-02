@@ -51,7 +51,7 @@
 .bodyDiscoMode {
     color: var(--hvit);
     background-attachment: fixed;
-    animation: Blink 0.3s linear infinite;;
+    animation: Blink 0.27s linear infinite;;
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
     margin: 3em;

@@ -128,7 +128,7 @@ function darkMode() {
         document.getElementById("discoballR").className="discoballROn"
         document.getElementById("lightRave").className="lightRaveOn"
         document.body.className="bodyDiscoMode"
-        timerOff = setTimeout(countAlert2, 8000)
+        timerOff = setTimeout(countAlert2, 7300)
         clearTimeout(timer)
     }
     function countAlert() {
