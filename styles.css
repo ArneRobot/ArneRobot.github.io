@@ -296,7 +296,7 @@ input:checked + .slider img {
     height: 150%;
     position: absolute;
     top: 0;
-    z-index: 2;
+    z-index: 3;
 }
 .lightRaveOff {
     display: none;
