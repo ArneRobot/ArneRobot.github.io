@@ -106,7 +106,7 @@ function capitalize(navn) {
     return navn;
 }
 
-let modeArray = ['images/darkMode.png', 'dark', 'light', 'images/lightMode.png']
+let modeArray = ['images/darkMode.png', 'light', 'dark', 'images/lightMode.png']
 var count = 0
 
 function darkMode() {
@@ -127,7 +127,7 @@ function darkMode() {
         document.getElementById("discoballL").className="discoballLOn"
         document.getElementById("discoballR").className="discoballROn"
         document.getElementById("lightRave").className="lightRaveOn"
-        document.body.classList.add("bodyDiscoMode");
+        document.body.className = "bodyDiscoMode";
         timerOff = setTimeout(countAlert2, 7300)
         clearTimeout(timer)
     }
@@ -140,12 +140,9 @@ function darkMode() {
         document.getElementById("discoballL").className="discoballLOff"
         document.getElementById("discoballR").className="discoballROff"
         document.getElementById("lightRave").className="lightRaveOff"
-        document.body.classList.remove("bodyDiscoMode");
+        document.body.className = '';
         if (mode == 'dark') {
-            document.body.classList.add('dark-mode');
-        }
-        else {
-            document.body.classList.remove('darkmode');
+            document.body.className = 'dark-mode';
         }
     }
 }
