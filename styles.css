@@ -86,6 +86,10 @@ body {
     overflow-x: hidden;
 }
 
+body > img {
+    pointer-events: none;
+}
+
 p {
     color: var(--tekst1);
     font-size: 1.2em;
@@ -138,8 +142,6 @@ footer {
     padding-bottom: 3em;
     margin-top: 1em;
     display: flex;
-    background-color: var(--bakgrunn);
-    box-shadow: 0 -20px 20px var(--bakgrunn);
     width: auto;
 }
 
