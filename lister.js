@@ -211,7 +211,7 @@ const tider = [
     'midt på dagen',
     'før skola',
     'når :kjoenn: er hjemme',
-    'når :kjoenn: står utenfor politistansjonen',
+    'når :kjoenn: står utenfor politistasjonen',
     'mens :kjoenn: løper fra barneskola',
     'mens :kjoenn: løper fra barneskole lærere',
     'midt på natta',
