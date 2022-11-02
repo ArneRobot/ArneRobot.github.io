@@ -246,21 +246,17 @@ input:checked + .slider img {
 .confettiOn {
     display: block;
     position: absolute;
-    width: 70%;
+    width: 90%;
     top: -3%;
 }
 .confettiOff {
     display: none;
-    position: absolute;
-    width: 70%;
 }
 .discoballLOff {
     display: none;
-    position: absolute;
 }
 .discoballROff {
     display: none;
-    position: absolute;
 }
 .discoballLOn {
     position: absolute;
@@ -285,12 +281,6 @@ input:checked + .slider img {
 }
 .lightRaveOff {
     display: none;
-    opacity: 33%;
-    width: 150%;
-    height: 150%;
-    position: absolute;
-    top: 0;
-    z-index: 2;
 }
 
 @media (max-width: 100vh) {
