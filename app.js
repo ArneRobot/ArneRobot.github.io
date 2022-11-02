@@ -106,10 +106,11 @@ function capitalize(navn) {
     return navn;
 }
 
-let modeArray = ['images/darkMode.png', 'images/lightMode.png']
+let modeArray = ['images/darkMode.png', 'dark', 'light', 'images/lightMode.png']
 var count = 0
 
 function darkMode() {
+    var mode = modeArray[1];
     var element = document.body;
     element.classList.toggle("dark-mode");
     document.getElementById('modeBilde').src = modeArray[0];
@@ -122,12 +123,11 @@ function darkMode() {
     if (count == 12) {
         console.log("Disco mode startet.")
         count = 0
-        var mode = document.body.className
         document.getElementById("confetti").className="confettiOn"
         document.getElementById("discoballL").className="discoballLOn"
         document.getElementById("discoballR").className="discoballROn"
         document.getElementById("lightRave").className="lightRaveOn"
-        document.body.className="bodyDiscoMode"
+        document.body.classList.add("bodyDiscoMode");
         timerOff = setTimeout(countAlert2, 7300)
         clearTimeout(timer)
     }
@@ -140,21 +140,12 @@ function darkMode() {
         document.getElementById("discoballL").className="discoballLOff"
         document.getElementById("discoballR").className="discoballROff"
         document.getElementById("lightRave").className="lightRaveOff"
-        if (mode == "dark-mode") {
-            document.body.className="dark-mode"
+        document.body.classList.remove("bodyDiscoMode");
+        if (mode == 'dark') {
+            document.body.classList.add('dark-mode');
         }
         else {
-            document.body.className=""
+            document.body.classList.remove('darkmode');
         }
     }
-}
-
-let rightArray = ['1em', '-6em']
-
-function toggleX() {
-    var element = document.querySelector('.svg');
-    element.classList.toggle("toggle-x");
-    var element2 = document.querySelector('nav');
-    element2.style.right = rightArray[0];
-    rightArray.reverse();
 }
