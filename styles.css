@@ -6,10 +6,8 @@
 }
 
 .dark-mode {
-    --bakgrunn: #151515;
-    --hvit: #fbd89f;
-    --tekst1: #EAD2AB;
-    --tekst2: #fff1da;
+    --bakgrunn: #231f20;
+    --tekst1: #6ec3e2;
 }
 @keyframes Blink{
     0%{
@@ -66,6 +64,7 @@
 * {
     margin: 0;
     padding: 0;
+    transition: .2s;
 }
 
 /*
@@ -84,6 +83,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 }
 
 p {
@@ -158,23 +158,6 @@ footer img:active {
     transform: scale(0.8);
 }
 
-.velgKjoenn {
-    display: flex;
-}
-
-.velgKjoenn > div {
-    user-select: none;
-    width:4em; height:4em;
-    margin:1vw 0;
-    background-color: var(--hvit);
-    border-radius: 10px;
-    color: black;
-    font-weight: bold;
-    font-size: 10em;
-    text-align: center;
-    
-}
-
 /* The switch - the box around the slider */
 .switch {
     position: relative;
@@ -226,9 +209,9 @@ input:focus + .slider {
 }
 
 input:checked + .slider img {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    -webkit-transform: translateX(130%);
+    -ms-transform: translateX(130%);
+    transform: translateX(130%);
     filter: invert();
 }
 
@@ -306,4 +289,8 @@ input:checked + .slider img {
     position: absolute;
     top: 0;
     z-index: 2;
+}
+
+@media (max-width: 100vh) {
+    
 }

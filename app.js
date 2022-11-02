@@ -148,3 +148,13 @@ function darkMode() {
         }
     }
 }
+
+let rightArray = ['1em', '-6em']
+
+function toggleX() {
+    var element = document.querySelector('.svg');
+    element.classList.toggle("toggle-x");
+    var element2 = document.querySelector('nav');
+    element2.style.right = rightArray[0];
+    rightArray.reverse();
+}
