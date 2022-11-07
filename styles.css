@@ -282,7 +282,3 @@ input:checked + .slider img {
 .lightRaveOff {
     display: none;
 }
-
-@media (max-width: 100vh) {
-    
-}
