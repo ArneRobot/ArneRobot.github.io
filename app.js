@@ -25,7 +25,15 @@ function generer() {
     navn = capitalize(navn);
     // velger tilfeldige elementer fra listene
     let handling = handlinger[Math.floor(Math.random()*handlinger.length)];
-    let offer = offere[Math.floor(Math.random()*offere.length)];
+    // tester om navn er det samme som offeret og bytter det ut med et annet offer som ikke er likt.
+    while (true) {
+        var offer = offere[Math.floor(Math.random()*offere.length)];
+        if (navn.toLowerCase() != offer.toLowerCase()) {
+            break
+        }
+
+    }
+    
     let tid = tider[Math.floor(Math.random()*tider.length)];
 
     // velger kjønnet på personen og erstatter :kjoenn: med riktig pronomen
@@ -73,9 +81,20 @@ function generer() {
 function printSitat(navn, handling, offer, tid) {
     // setter sammen setning
     let vits = navn + ' ' + handling + ' ' + offer + ' ' + tid;
+
+    
     
     // leter etter :tag: og bytter det ut med tilfeldig fra liste
-    vits = vits.replace(/:offer:/g, offere[Math.floor(Math.random()*offere.length)]);
+    while (true) {
+        var replaceOffer = offere[Math.floor(Math.random()*offere.length)];
+        if (navn.toLowerCase() != offer.toLowerCase()) {
+            break
+        }
+
+    }
+
+    vits = vits.replace(/:offer:/g, replaceOffer);
+
     vits = vits.replace(/:handling:/g, handlinger[Math.floor(Math.random()*handlinger.length)]);
 
     // endrer melding-variabelet fra del.js til vitsen slik at sitatet blir med om man deler siden
