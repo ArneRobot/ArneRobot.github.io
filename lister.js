@@ -164,7 +164,6 @@ const offere = [
     'miljøaktivister',
     'paven',
     'barnehagebarn',
-    'Christian Tharaldsen',
     'prestene',
     'apekatter',
     '09',
