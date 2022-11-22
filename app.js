@@ -106,7 +106,7 @@ function printSitat(navn, handling, offer, tid) {
     sitat.style = 'color: #FEFFFF; ';
     sitat.id = 'sitatTekst';
     sitatId.appendChild(sitat);
-
+/*
     //Typewriter animation
     var tekst = sitat.innerHTML;
     sitatTekst.innerHTML = "";
@@ -116,7 +116,7 @@ function printSitat(navn, handling, offer, tid) {
             sitatTekst.innerHTML = sitatTekst.innerHTML + sitat;
         }, 15 * i);
     }
-
+*/
     // lager "-Brian"
     let brian = document.createElement('p');
     brian.innerText = '-Brian';
